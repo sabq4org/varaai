@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A8D09CFBCFEB02419AD830 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2FACB775C5BB3B3820F8D /* ResultsView.swift */; };
+		189AF916D77F57C9AE824B44 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B178FDFC8DCF438EA3B79430 /* AppModel.swift */; };
+		1C8E6CA4C9790EC8061B7EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04CA213025FDEAF84DE6A79 /* Assets.xcassets */; };
+		1E8F2A78490A057B281696BC /* WorldCupHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5E788EEDD33B5A5C0919 /* WorldCupHubView.swift */; };
+		2D67FCAADE6741785165990C /* LiveActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9E8B2D3C349A8AF32CAE4C /* LiveActivityController.swift */; };
+		2EF703A47291AAAFE8318AB2 /* VaraModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A8E2D8FDC9E6C9E9ABE4C /* VaraModels.swift */; };
+		3021E3DC2CA546A93055B905 /* StatsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB302F06F09FA9068AFB5207 /* StatsSection.swift */; };
+		344B199821D5F1C36B9FCFFD /* MatchActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D279DAE170E47CF8E72050 /* MatchActivityAttributes.swift */; };
+		3F7A5FCA7D52DEBD7E93DADD /* LeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E47ADE7C0941EFF4134DE3 /* LeagueViewModel.swift */; };
+		3FF7F4BF15AD5C53111A0A2D /* MatchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB258B00CE992585D6F19DA /* MatchDetailViewModel.swift */; };
+		446B5CA630AA00AC02ABB6DD /* FavoriteTeamPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E7932259EBCE9F09AC404 /* FavoriteTeamPicker.swift */; };
+		4886E7837E08E4C102EF13B4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2D96BE5AAAC749CB74C6E /* Theme.swift */; };
+		6C8C158EF9C85C9C8E83F848 /* ClubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D3D52F3E8149556BA35C4 /* ClubsView.swift */; };
+		7348F7137CE42303B2ED374C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FE6D0343CB00087D298AF /* TodayView.swift */; };
+		8F7F764D0A03FE6490FEDF0C /* MatchLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD1CBAF2982AE40499C10D /* MatchLiveActivity.swift */; };
+		97D4969C547D40DA639EF82F /* StandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22208660A9E2EC8B57CD5D5C /* StandingsView.swift */; };
+		A32A4D034C96E755C17CAA4E /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676AC18536C0AD6F8F216D56 /* TeamDetailView.swift */; };
+		A8CA08F2BE19448EAFF88F4F /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7326889B0B88B3C38B9B5FDA /* MatchDetailView.swift */; };
+		B93B870BCEC311F97FC84E78 /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F60D4FED8B923F747C4FD /* PlayerDetailView.swift */; };
+		BAE69F7CA6877150EC3D0D13 /* ScorersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286A74FAD7F5F79856EDCF46 /* ScorersView.swift */; };
+		C2791E0F45E0F19554D9B8C0 /* BracketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BED94F71A29D6BDE4ADF109 /* BracketView.swift */; };
+		D4E5252A0C04FE8A17BDA5DD /* EventsTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812949AB6377DA56C5714A8D /* EventsTimeline.swift */; };
+		E0E8573FD8AA00040D0852D1 /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45080FBC088E053AA384419D /* FavoritesModel.swift */; };
+		E7B9AC566CDD4EEDBDF250C6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3818126019044202042782 /* RootView.swift */; };
+		ED91E7DB491057625C81CC2C /* VaraClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AE358AF0E0A21AEF103DB /* VaraClient.swift */; };
+		F0E12DEA581106C6780FD27E /* MatchActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D279DAE170E47CF8E72050 /* MatchActivityAttributes.swift */; };
+		F43A02164DBCCF076F9453D5 /* LineupsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C4B34F8D81F408176D988 /* LineupsSection.swift */; };
+		F86825EC4A32AA387A1BE36A /* VARAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E677CE3D36F58FCB70571446 /* VARAApp.swift */; };
+		FBD563C4892B4643AA0D7FF2 /* VARAWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518372838B62955D77684CE7 /* VARAWidgetsBundle.swift */; };
+		FD76C00CB9996C398AF89D88 /* VARAWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 28ADF091C829C21EC6411448 /* VARAWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FFFC942AEE605B5EEE311C27 /* CompetitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FF62915226625D1E71652 /* CompetitionsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC0FA3D07A2E64B2C6931FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D146D2F80DABCCA84A31A81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73EABA2197DA8CA562B8A855;
+			remoteInfo = VARAWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C03459057598815D3EBEE0AD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD76C00CB9996C398AF89D88 /* VARAWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07F031922E24E32EA9C0117D /* VARA.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VARA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		085FE6D0343CB00087D298AF /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		0BED94F71A29D6BDE4ADF109 /* BracketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketView.swift; sourceTree = "<group>"; };
+		14E47ADE7C0941EFF4134DE3 /* LeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModel.swift; sourceTree = "<group>"; };
+		1D4C4B34F8D81F408176D988 /* LineupsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupsSection.swift; sourceTree = "<group>"; };
+		22208660A9E2EC8B57CD5D5C /* StandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsView.swift; sourceTree = "<group>"; };
+		286A74FAD7F5F79856EDCF46 /* ScorersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorersView.swift; sourceTree = "<group>"; };
+		28ADF091C829C21EC6411448 /* VARAWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = VARAWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A6FF62915226625D1E71652 /* CompetitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsView.swift; sourceTree = "<group>"; };
+		3FE2D96BE5AAAC749CB74C6E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		45080FBC088E053AA384419D /* FavoritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModel.swift; sourceTree = "<group>"; };
+		4C9E8B2D3C349A8AF32CAE4C /* LiveActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityController.swift; sourceTree = "<group>"; };
+		518372838B62955D77684CE7 /* VARAWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VARAWidgetsBundle.swift; sourceTree = "<group>"; };
+		5843C8D0F08DA302D3EBD2A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		591E5E788EEDD33B5A5C0919 /* WorldCupHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupHubView.swift; sourceTree = "<group>"; };
+		676AC18536C0AD6F8F216D56 /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
+		7326889B0B88B3C38B9B5FDA /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
+		812949AB6377DA56C5714A8D /* EventsTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTimeline.swift; sourceTree = "<group>"; };
+		87D279DAE170E47CF8E72050 /* MatchActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchActivityAttributes.swift; sourceTree = "<group>"; };
+		908D3D52F3E8149556BA35C4 /* ClubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsView.swift; sourceTree = "<group>"; };
+		A46A8E2D8FDC9E6C9E9ABE4C /* VaraModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaraModels.swift; sourceTree = "<group>"; };
+		B178FDFC8DCF438EA3B79430 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		CAB258B00CE992585D6F19DA /* MatchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewModel.swift; sourceTree = "<group>"; };
+		CB2F60D4FED8B923F747C4FD /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
+		CB302F06F09FA9068AFB5207 /* StatsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsSection.swift; sourceTree = "<group>"; };
+		D5F2FACB775C5BB3B3820F8D /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		E00E7932259EBCE9F09AC404 /* FavoriteTeamPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTeamPicker.swift; sourceTree = "<group>"; };
+		E677CE3D36F58FCB70571446 /* VARAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VARAApp.swift; sourceTree = "<group>"; };
+		EADD1CBAF2982AE40499C10D /* MatchLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLiveActivity.swift; sourceTree = "<group>"; };
+		EE6F6807CAC84FFEE77B6B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F04CA213025FDEAF84DE6A79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F36AE358AF0E0A21AEF103DB /* VaraClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaraClient.swift; sourceTree = "<group>"; };
+		FF3818126019044202042782 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		010CE848DFDB6F74DF6FB2C5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E00E7932259EBCE9F09AC404 /* FavoriteTeamPicker.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		109FD417344CE9C8444A2E39 /* Competitions */ = {
+			isa = PBXGroup;
+			children = (
+				2A6FF62915226625D1E71652 /* CompetitionsView.swift */,
+			);
+			path = Competitions;
+			sourceTree = "<group>";
+		};
+		110224056E6590EEC5A27F2B /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				4C9E8B2D3C349A8AF32CAE4C /* LiveActivityController.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		14C3AA658930613DC375268A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A46A8E2D8FDC9E6C9E9ABE4C /* VaraModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1ADC91F66ACAD4293C81582B /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				676AC18536C0AD6F8F216D56 /* TeamDetailView.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		2BF9411C4059ABC1431A2C91 = {
+			isa = PBXGroup;
+			children = (
+				F2105B6FE9B9ADD76D51FBE6 /* Shared */,
+				35C0D25D5076DEC36560139A /* VARA */,
+				A1B320409BAEBA05516AB438 /* VARAWidgets */,
+				C547D508CFAF60CAD635F99B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35C0D25D5076DEC36560139A /* VARA */ = {
+			isa = PBXGroup;
+			children = (
+				F04CA213025FDEAF84DE6A79 /* Assets.xcassets */,
+				5843C8D0F08DA302D3EBD2A9 /* Info.plist */,
+				E677CE3D36F58FCB70571446 /* VARAApp.swift */,
+				8227FE78B624E9B6F237C894 /* Features */,
+				110224056E6590EEC5A27F2B /* Live */,
+				14C3AA658930613DC375268A /* Models */,
+				C8D508EA3C9A1B7995E2888D /* Networking */,
+				93B6D8FDD9E67786127538EC /* Theme */,
+			);
+			path = VARA;
+			sourceTree = "<group>";
+		};
+		51399526BF311A6A70C39967 /* Clubs */ = {
+			isa = PBXGroup;
+			children = (
+				908D3D52F3E8149556BA35C4 /* ClubsView.swift */,
+			);
+			path = Clubs;
+			sourceTree = "<group>";
+		};
+		604A36FEAF1C971C8B99C1F4 /* MatchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				812949AB6377DA56C5714A8D /* EventsTimeline.swift */,
+				1D4C4B34F8D81F408176D988 /* LineupsSection.swift */,
+				7326889B0B88B3C38B9B5FDA /* MatchDetailView.swift */,
+				CAB258B00CE992585D6F19DA /* MatchDetailViewModel.swift */,
+				CB302F06F09FA9068AFB5207 /* StatsSection.swift */,
+			);
+			path = MatchDetail;
+			sourceTree = "<group>";
+		};
+		6A25B8285F046482F8B348F4 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				45080FBC088E053AA384419D /* FavoritesModel.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		8227FE78B624E9B6F237C894 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B178FDFC8DCF438EA3B79430 /* AppModel.swift */,
+				14E47ADE7C0941EFF4134DE3 /* LeagueViewModel.swift */,
+				D5F2FACB775C5BB3B3820F8D /* ResultsView.swift */,
+				FF3818126019044202042782 /* RootView.swift */,
+				22208660A9E2EC8B57CD5D5C /* StandingsView.swift */,
+				51399526BF311A6A70C39967 /* Clubs */,
+				109FD417344CE9C8444A2E39 /* Competitions */,
+				6A25B8285F046482F8B348F4 /* Favorites */,
+				604A36FEAF1C971C8B99C1F4 /* MatchDetail */,
+				010CE848DFDB6F74DF6FB2C5 /* Onboarding */,
+				EEF2A21F39DD715C4EABFEF2 /* Player */,
+				C272CFBA6222EDFA8E7A7C41 /* Scorers */,
+				1ADC91F66ACAD4293C81582B /* Team */,
+				8E9DAD5795596BFBFA09A17A /* Today */,
+				B965EB2DBFEAA3B349AD7558 /* WorldCup */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8E9DAD5795596BFBFA09A17A /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				085FE6D0343CB00087D298AF /* TodayView.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		93B6D8FDD9E67786127538EC /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				3FE2D96BE5AAAC749CB74C6E /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A1B320409BAEBA05516AB438 /* VARAWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				EE6F6807CAC84FFEE77B6B74 /* Info.plist */,
+				EADD1CBAF2982AE40499C10D /* MatchLiveActivity.swift */,
+				518372838B62955D77684CE7 /* VARAWidgetsBundle.swift */,
+			);
+			path = VARAWidgets;
+			sourceTree = "<group>";
+		};
+		B965EB2DBFEAA3B349AD7558 /* WorldCup */ = {
+			isa = PBXGroup;
+			children = (
+				0BED94F71A29D6BDE4ADF109 /* BracketView.swift */,
+				591E5E788EEDD33B5A5C0919 /* WorldCupHubView.swift */,
+			);
+			path = WorldCup;
+			sourceTree = "<group>";
+		};
+		C272CFBA6222EDFA8E7A7C41 /* Scorers */ = {
+			isa = PBXGroup;
+			children = (
+				286A74FAD7F5F79856EDCF46 /* ScorersView.swift */,
+			);
+			path = Scorers;
+			sourceTree = "<group>";
+		};
+		C547D508CFAF60CAD635F99B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07F031922E24E32EA9C0117D /* VARA.app */,
+				28ADF091C829C21EC6411448 /* VARAWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8D508EA3C9A1B7995E2888D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F36AE358AF0E0A21AEF103DB /* VaraClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EEF2A21F39DD715C4EABFEF2 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				CB2F60D4FED8B923F747C4FD /* PlayerDetailView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		F2105B6FE9B9ADD76D51FBE6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				87D279DAE170E47CF8E72050 /* MatchActivityAttributes.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12EF3F847913D29284242ECF /* VARA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C7B9224F6489775BDA09ED /* Build configuration list for PBXNativeTarget "VARA" */;
+			buildPhases = (
+				F96A895520CF4FCA9E206E66 /* Sources */,
+				84C71FFC37262D5DE83FE59B /* Resources */,
+				C03459057598815D3EBEE0AD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1226A6F160D867CCA51BA9DF /* PBXTargetDependency */,
+			);
+			name = VARA;
+			packageProductDependencies = (
+			);
+			productName = VARA;
+			productReference = 07F031922E24E32EA9C0117D /* VARA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73EABA2197DA8CA562B8A855 /* VARAWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530D30DE865ED4C2958CF1AD /* Build configuration list for PBXNativeTarget "VARAWidgets" */;
+			buildPhases = (
+				6D5B7F34A6C7C9CCAAC450D3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VARAWidgets;
+			packageProductDependencies = (
+			);
+			productName = VARAWidgets;
+			productReference = 28ADF091C829C21EC6411448 /* VARAWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D146D2F80DABCCA84A31A81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					12EF3F847913D29284242ECF = {
+						DevelopmentTeam = "";
+					};
+					73EABA2197DA8CA562B8A855 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 697256A0B2C0CB88EE6A1467 /* Build configuration list for PBXProject "VARA" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2BF9411C4059ABC1431A2C91;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C547D508CFAF60CAD635F99B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12EF3F847913D29284242ECF /* VARA */,
+				73EABA2197DA8CA562B8A855 /* VARAWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C71FFC37262D5DE83FE59B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8E6CA4C9790EC8061B7EA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D5B7F34A6C7C9CCAAC450D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E12DEA581106C6780FD27E /* MatchActivityAttributes.swift in Sources */,
+				8F7F764D0A03FE6490FEDF0C /* MatchLiveActivity.swift in Sources */,
+				FBD563C4892B4643AA0D7FF2 /* VARAWidgetsBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96A895520CF4FCA9E206E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189AF916D77F57C9AE824B44 /* AppModel.swift in Sources */,
+				C2791E0F45E0F19554D9B8C0 /* BracketView.swift in Sources */,
+				6C8C158EF9C85C9C8E83F848 /* ClubsView.swift in Sources */,
+				FFFC942AEE605B5EEE311C27 /* CompetitionsView.swift in Sources */,
+				D4E5252A0C04FE8A17BDA5DD /* EventsTimeline.swift in Sources */,
+				446B5CA630AA00AC02ABB6DD /* FavoriteTeamPicker.swift in Sources */,
+				E0E8573FD8AA00040D0852D1 /* FavoritesModel.swift in Sources */,
+				3F7A5FCA7D52DEBD7E93DADD /* LeagueViewModel.swift in Sources */,
+				F43A02164DBCCF076F9453D5 /* LineupsSection.swift in Sources */,
+				2D67FCAADE6741785165990C /* LiveActivityController.swift in Sources */,
+				344B199821D5F1C36B9FCFFD /* MatchActivityAttributes.swift in Sources */,
+				A8CA08F2BE19448EAFF88F4F /* MatchDetailView.swift in Sources */,
+				3FF7F4BF15AD5C53111A0A2D /* MatchDetailViewModel.swift in Sources */,
+				B93B870BCEC311F97FC84E78 /* PlayerDetailView.swift in Sources */,
+				09A8D09CFBCFEB02419AD830 /* ResultsView.swift in Sources */,
+				E7B9AC566CDD4EEDBDF250C6 /* RootView.swift in Sources */,
+				BAE69F7CA6877150EC3D0D13 /* ScorersView.swift in Sources */,
+				97D4969C547D40DA639EF82F /* StandingsView.swift in Sources */,
+				3021E3DC2CA546A93055B905 /* StatsSection.swift in Sources */,
+				A32A4D034C96E755C17CAA4E /* TeamDetailView.swift in Sources */,
+				4886E7837E08E4C102EF13B4 /* Theme.swift in Sources */,
+				7348F7137CE42303B2ED374C /* TodayView.swift in Sources */,
+				F86825EC4A32AA387A1BE36A /* VARAApp.swift in Sources */,
+				ED91E7DB491057625C81CC2C /* VaraClient.swift in Sources */,
+				2EF703A47291AAAFE8318AB2 /* VaraModels.swift in Sources */,
+				1E8F2A78490A057B281696BC /* WorldCupHubView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1226A6F160D867CCA51BA9DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73EABA2197DA8CA562B8A855 /* VARAWidgets */;
+			targetProxy = BC0FA3D07A2E64B2C6931FE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		42E4A5BAE2930DA0894575EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		D28229A9D7EEA5D048748E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = VARA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vara.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DF12F2896906FEC57C818AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				INFOPLIST_FILE = VARAWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vara.app.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E042DFACBD6464BC87F4EDD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = VARA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vara.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E5ECE030212F768E93BB91A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		EE0F897A381659EA078A0319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				INFOPLIST_FILE = VARAWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vara.app.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C7B9224F6489775BDA09ED /* Build configuration list for PBXNativeTarget "VARA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D28229A9D7EEA5D048748E5E /* Debug */,
+				E042DFACBD6464BC87F4EDD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		530D30DE865ED4C2958CF1AD /* Build configuration list for PBXNativeTarget "VARAWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF12F2896906FEC57C818AFC /* Debug */,
+				EE0F897A381659EA078A0319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		697256A0B2C0CB88EE6A1467 /* Build configuration list for PBXProject "VARA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5ECE030212F768E93BB91A0 /* Debug */,
+				42E4A5BAE2930DA0894575EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D146D2F80DABCCA84A31A81 /* Project object */;
+}

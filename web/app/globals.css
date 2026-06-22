@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Color channels (R G B) consumed by tailwind.config as rgb(var(--c-x) / alpha).
+   :root = dark (default). [data-theme="light"] overrides the neutrals.
+   Each theme also supplies its own surface/shadow recipe so depth reads
+   correctly on both a near-black and a near-white canvas. */
+:root {
+  --c-bg: 9 13 19;
+  --c-surface: 18 24 33;
+  --c-surface2: 28 37 50;
+  --c-line: 42 53 69;
+  --c-text: 234 240 247;
+  --c-muted: 142 155 173;
+  --c-accent: 0 224 164;
+  --c-accent-dim: 12 107 84;
+  --c-win: 0 224 164;
+  --c-draw: 201 162 39;
+  --c-lose: 255 93 108;
+  --c-gold: 255 209 102;
+  --c-glow: 17 35 47; /* ambient radial highlight */
+
+  /* surface recipe (dark): top-lit gradient + deep ambient drop */
+  --card-grad: linear-gradient(180deg, rgb(var(--c-surface2) / 0.5), rgb(var(--c-surface)) 62%);
+  --card-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05), 0 14px 34px -22px rgb(0 0 0 / 0.85);
+  --card-shadow-hover: inset 0 1px 0 rgb(255 255 255 / 0.07),
+    0 22px 48px -26px rgb(0 0 0 / 0.95), 0 0 0 1px rgb(var(--c-accent) / 0.08);
+  --card-border: rgb(var(--c-line) / 0.85);
+  --bg-tint-a: rgb(var(--c-accent) / 0.08);
+  --bg-tint-b: rgb(var(--c-glow));
+
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --c-bg: 239 243 248;
+  --c-surface: 255 255 255;
+  --c-surface2: 237 242 248;
+  --c-line: 203 213 226;
+  --c-text: 15 23 38;
+  --c-muted: 88 100 119;
+  --c-accent: 5 150 105; /* deeper emerald — legible on white */
+  --c-accent-dim: 4 116 84;
+  --c-win: 5 150 105;
+  --c-draw: 176 124 12;
+  --c-lose: 220 48 70;
+  --c-gold: 202 138 4;
+  --c-glow: 226 240 255;
+
+  /* surface recipe (light): crisp white + real elevation, no muddy gradient */
+  --card-grad: linear-gradient(180deg, #ffffff, rgb(var(--c-bg) / 0.55));
+  --card-shadow: 0 1px 2px rgb(15 23 42 / 0.06), 0 14px 28px -18px rgb(15 23 42 / 0.22);
+  --card-shadow-hover: 0 1px 2px rgb(15 23 42 / 0.08),
+    0 22px 40px -22px rgb(15 23 42 / 0.3), 0 0 0 1px rgb(var(--c-accent) / 0.18);
+  --card-border: rgb(var(--c-line));
+  --bg-tint-a: rgb(var(--c-accent) / 0.06);
+  --bg-tint-b: rgb(var(--c-glow));
+
+  color-scheme: light;
+}
+
+@layer base {
+  body {
+    background:
+      radial-gradient(1000px 560px at 88% -10%, var(--bg-tint-a) 0%, transparent 55%) fixed,
+      radial-gradient(1200px 640px at 8% -12%, var(--bg-tint-b) 0%, transparent 52%) fixed,
+      rgb(var(--c-bg));
+    color: rgb(var(--c-text));
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  /* Scores, minutes and bare numbers read left-to-right inside the RTL layout. */
+  .ltr {
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+}
+
+@layer components {
+  /* Unified surface — one elevation language across both themes. */
+  .card {
+    border: 1px solid var(--card-border);
+    border-radius: 1rem;
+    background-image: var(--card-grad);
+    box-shadow: var(--card-shadow);
+  }
+  /* Interactive cards (links): gentle rise + accent edge on hover. */
+  .card-hover {
+    @apply transition-all duration-200;
+  }
+  .card-hover:hover {
+    transform: translateY(-2px);
+    border-color: rgb(var(--c-accent) / 0.4);
+    box-shadow: var(--card-shadow-hover);
+  }
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-2 text-[13px] text-muted;
+  }
+  /* Section heading accent marker — the small vertical rail used site-wide. */
+  .rail {
+    @apply inline-block h-4 w-1 rounded-full bg-gradient-to-b from-accent to-accentDim;
+    box-shadow: 0 0 12px rgb(var(--c-accent) / 0.5);
+  }
+  /* Accent gradient text for emphatic numbers/labels. */
+  .text-accent-grad {
+    background: linear-gradient(180deg, rgb(var(--c-accent)), rgb(var(--c-accent-dim)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* —— Hero stage —— brand-emerald cinematic banner (white text in both themes).
+     Dark: deep green-charcoal. Light: rich emerald so it reads as an intentional
+     branded banner rather than a black box dropped on a white page. */
+  .hero-stage {
+    color: #fff;
+    background:
+      radial-gradient(130% 120% at 50% -25%, rgb(var(--c-accent) / 0.22), transparent 58%),
+      radial-gradient(90% 70% at 50% 125%, rgb(var(--c-accent) / 0.1), transparent 60%),
+      linear-gradient(172deg, #0a1714 0%, #06100d 55%, #030806 100%);
+  }
+  [data-theme="light"] .hero-stage {
+    background:
+      radial-gradient(130% 120% at 50% -25%, rgba(190, 255, 232, 0.28), transparent 58%),
+      radial-gradient(90% 70% at 50% 125%, rgba(255, 255, 255, 0.08), transparent 60%),
+      linear-gradient(168deg, #0e8a66 0%, #086245 52%, #064d38 100%);
+    background-color: #064d38;
+  }
+  /* Soft inner spotlight behind the score/crests. */
+  .hero-spot {
+    background: radial-gradient(closest-side, rgb(var(--c-accent) / 0.5), transparent);
+  }
+}
+
+@layer utilities {
+  .animate-rise {
+    animation: vara-rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
+@keyframes vara-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Thin custom scrollbars. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--c-line)) transparent;
+}
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--c-line));
+  border-radius: 999px;
+}

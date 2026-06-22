@@ -1,0 +1,16 @@
+{
+  "name": "vara-edge",
+  "version": "0.1.0",
+  "description": "VARA aggregation layer — normalizes multi-provider sports data into one fast, provider-agnostic API.",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot --env-file=../.env src/index.ts",
+    "start": "bun run --env-file=../.env src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.6.14"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

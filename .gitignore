@@ -1,0 +1,29 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+*.key
+secrets/
+
+# Node / Bun
+node_modules/
+dist/
+build/
+.turbo/
+*.log
+bun.lockb
+
+# macOS
+.DS_Store
+
+# Xcode / iOS
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.build/
+Pods/
+*.ipa
+
+# Editor
+.vscode/
+.idea/

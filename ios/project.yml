@@ -1,0 +1,61 @@
+name: VARA
+options:
+  bundleIdPrefix: com.vara
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGNING_ALLOWED: "NO"
+
+targets:
+  VARA:
+    type: application
+    platform: iOS
+    sources:
+      - path: VARA
+      - path: Shared
+    dependencies:
+      - target: VARAWidgets
+    info:
+      path: VARA/Info.plist
+      properties:
+        CFBundleDisplayName: VARA
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIUserInterfaceStyle: Dark
+        NSSupportsLiveActivities: true
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+          NSExceptionDomains:
+            localhost:
+              NSExceptionAllowsInsecureHTTPLoads: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.vara.app
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1"
+
+  VARAWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: VARAWidgets
+      - path: Shared
+    info:
+      path: VARAWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: VARA
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.vara.app.widgets
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGNING_ALLOWED: "NO"

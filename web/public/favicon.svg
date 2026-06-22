@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#0A0E14"/>
+  <text x="50%" y="50%" dy="0.35em" text-anchor="middle"
+        font-family="-apple-system, Segoe UI, sans-serif" font-size="26" font-weight="800">
+    <tspan fill="#EAF0F7">V</tspan><tspan fill="#00E0A4">R</tspan><tspan fill="#EAF0F7">A</tspan>
+  </text>
+</svg>
